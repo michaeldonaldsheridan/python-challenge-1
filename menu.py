@@ -269,8 +269,8 @@ extended_prices = [item["Price"] * item["Quantity"] for item in order_list]
 print ()
 
 for i in range(len(order_list)):
-    item = order_list[1]
-    extended_price = extended_prices[1]
+    item = order_list[i]
+    extended_price = extended_prices[i]
     print(f"Quantity {item['Quantity']} of {item['Item name']} cost {extended_price}")
 
 print ()
